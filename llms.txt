@@ -1,0 +1,21 @@
+# gemini-advisor
+
+> Python advisor tool for Gemini and Google Antigravity agents. A fast executor
+> model calls `advisor(question, context)` to get guidance from a stronger Gemini
+> model. Works as a tool in the Google Antigravity SDK and in google-genai
+> automatic function calling. Modeled on Claude's advisor tool.
+
+## Docs
+
+- [README](https://github.com/NiksheyYadav/gemini-advisor/blob/main/README.md): install, usage, options, and differences from Claude's advisor
+- [Agent skill](https://github.com/NiksheyYadav/gemini-advisor/blob/main/skills/gemini-advisor/SKILL.md): how an agent should set up and use the tool
+- [Source](https://github.com/NiksheyYadav/gemini-advisor/blob/main/gemini_advisor/advisor.py): `make_advisor_tool()`
+- [Tests](https://github.com/NiksheyYadav/gemini-advisor/blob/main/tests/test_advisor.py): unit tests with a fake client
+
+## Facts
+
+- Language: Python. Dependency: google-genai (only for real calls).
+- Default advisor model: gemini-3.1-pro-preview (a preview name).
+- Default cap: 5 advisor calls per tool instance.
+- Status: unit-tested, not yet verified against the live Gemini API.
+- License: MIT.
